@@ -4,10 +4,10 @@ This repository contains information regarding the Luna Addon communication prot
 Protocol Version: 1
 
 ## Table of contents
-- [Receive Messages](#receive-messages)
+- [Receive Messages](#receive-messages) (server->client)
   - [init](#rm-init)
   - [mutate](#rm-mutate)
-- [Send Messages](#send-messages)
+- [Send Messages](#send-messages) (client->server)
   - [init](#sm-init)
   
 # <a id="receive-messages">Receive messages</a>
