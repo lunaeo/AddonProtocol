@@ -36,6 +36,7 @@ Sent to request the initialization message.
 | Id   | Type        | Name               | Description
 | ---  | ---         | ----               | -----------
 | `0`  | `Integer`   | Version            | The client addon protocol version.
+| `1`  | `String`    | SessionId          | The unique session id of the connection, received from the server.
 
 # <a id="models">Models</a>
 
