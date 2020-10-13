@@ -6,7 +6,7 @@ Protocol Version: 1
 ## Table of contents
 - [Receive Messages](#receive-messages)
   - [init](#rm-init)
-  - [mutate]($rm-mutate)
+  - [mutate](#rm-mutate)
 - [Send Messages](#send-messages)
   - [init](#sm-init)
   
