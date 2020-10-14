@@ -7,6 +7,8 @@ Protocol Version: 1
 - [Receive Messages](#receive-messages) (server->client)
   - [init](#rm-init)
   - [mutate](#rm-mutate)
+  - [sit](#rm-sit)
+  - [stand](#rm-stand)
 - [Send Messages](#send-messages) (client->server)
   - [init](#sm-init)
   
@@ -27,6 +29,13 @@ Occurs when the server demands a client-sided map gfx mutation.
 | `1`  | `Integer`   | X                  | The map x coordinate to mutate.
 | `2`  | `Integer`   | Y                  | The map y coordinate to mutate.
 | `3`  | `Integer`   | Id                  | The gfx id.
+
+### <a id="rm-sit">"sit"</a>
+Occurs when the server demands the client character to sit.
+
+
+### <a id="rm-stand">"stand"</a>
+Occurs when the server demands the client character to stand.
 
 # <a id="send-messages">Send messages</a>
 
