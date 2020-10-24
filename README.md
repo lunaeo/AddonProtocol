@@ -9,8 +9,10 @@ Protocol Version: 1
   - [mutate](#rm-mutate)
   - [sit](#rm-sit)
   - [stand](#rm-stand)
+  - [cursor](#rm-cursor)
 - [Send Messages](#send-messages) (client->server)
   - [init](#sm-init)
+  - [cursor](#sm-cursor)
   
 # <a id="receive-messages">Receive messages</a>
 ### <a id="rm-init">"init"</a>
@@ -33,9 +35,11 @@ Occurs when the server demands a client-sided map gfx mutation.
 ### <a id="rm-sit">"sit"</a>
 Occurs when the server demands the client character to sit.
 
-
 ### <a id="rm-stand">"stand"</a>
 Occurs when the server demands the client character to stand.
+
+### <a id="rm-cursor">"cursor"</a>
+Occurs when the server demands the client send a [cursor message](#sm-cursor).
 
 # <a id="send-messages">Send messages</a>
 
@@ -46,6 +50,15 @@ Sent to request the initialization message.
 | ---  | ---         | ----               | -----------
 | `0`  | `Integer`   | Version            | The client addon protocol version.
 | `1`  | `String`    | SessionId          | The unique session id of the connection, received from the server.
+
+
+### <a id="sm-cursor">"cursor"</a>
+Sent to request the following cursor properties.
+
+| Id   | Type        | Name               | Description
+| ---  | ---         | ----               | -----------
+| `0`  | `Integer`   | HoverTileX         | The X position of the map the cursor is hovering over.
+| `1`  | `Integer`   | HoverTileY         | The Y position of the map the cursor is hovering over.
 
 # <a id="models">Models</a>
 
