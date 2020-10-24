@@ -53,7 +53,7 @@ Sent to request the initialization message.
 
 
 ### <a id="sm-cursor">"cursor"</a>
-Sent to request the following cursor properties.
+Sent to the server when the client cursor state changes.
 
 | Id   | Type        | Name               | Description
 | ---  | ---         | ----               | -----------
